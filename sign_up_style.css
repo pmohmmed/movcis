@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+}
+body{
+    /* background-image: url(resource/sign_up.jpeg);
+    background-Z; */
+    background-color: #000;
+    background-image:url(resource/blur.jpeg);
+    background-size:cover;
+    background-position: center center;
+    
+}
+header {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+
+/* a {
+    border: 1px solid red;
+
+} */
+
+.logo{
+    width:140px;
+    height: 120px;
+    display:block;
+    margin: -30px auto 20px auto;
+}
+.parent{
+ 
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid rgb(211, 60, 85); */
+}
+
+.container{
+    
+    /* border: 1px solid black; */
+    position: relative;
+
+    display: flex;
+    box-shadow: 10px 13px 20px 0px black;
+    width: 1200px;
+    height: 800px;
+    border-radius: 10px;
+  
+    /* border:1px solid black;  */
+}
+
+
+.container .img{
+   
+    flex:4;
+    /* background-image: url(resource/avatar_sign.jpeg); */
+    background-color: black;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: infinite;
+    animation-name: fadeIn;
+
+    animation-duration:25s;
+
+    animation-timing-function: cubic-bezier(0,2,0.8,4);
+
+    width: 304px;
+    /* height: 800px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@keyframes fadeIn{
+ 
+    20%{
+        background: url(resource/LaCasaDePapel.jpeg);
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    40%{
+        background: url(resource/harry_sign.jpeg);
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background: url(resource/walkingDead_sign.jpeg);
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    85%{
+        background: url(resource/peaky_sign.webp);
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background: url(resource/avatar_sign.jpeg);
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+   
+  
+}
+
+#form {
+    flex: 4;
+    height: 100%;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    font-family: plexeina-bold,Helvetica,sans-serif;
+    color: #474e52;
+    /* background-color: #fff; */
+    /* border: 1px solid red; */
+    /* box-shadow: 0px -1px 1px 0px #eee; */
+    /* border-radius:10px; */
+    /* border-right: 0.01px solid rgb(236, 5, 5); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+    
+}
+
+
+
+/* #user {
+    
+
+} */
+
+
+
+.g_input input {
+    /* position: relative; */
+    height: 35px;
+    /* border-style: inset; */
+    outline: none;
+    border: none;
+    /* border-bottom: 1px solid rgba(138, 131, 131, 0.4); */
+    border-bottom:1px solid black;
+    width: 100%;
+    padding: 0 0 0 10px;
+ 
+
+}
+.g_input input:focus{
+    border-bottom:1px solid red;
+
+}
+.g_input{
+     position: relative;
+}   
+.fa-check-circle{
+    visibility: hidden;
+    position: absolute;
+
+}
+.fa-exclamation-circle{
+    position: absolute;
+    visibility: hidden;
+}
+.vaild .fa-check-circle{
+    position:absolute;
+    top: 13%;
+    right: 0px;
+    visibility: visible;
+    color: green;
+    /* background-color: wheat; */
+}
+.invalid .fa-exclamation-circle{
+    position:absolute;
+    top: 13%;
+    right: 0px;
+    visibility: visible;
+    color: red;
+    /* background-color: wheat; */
+}
+
+.g_input {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 80%;
+
+
+}
+
+
+
+/* label {
+    border: 1px solid blue;
+} */
+
+
+.g_label {
+    
+    margin:15px 0 5px 0;
+    width: 80%;
+    /* border: 1px solid black; */
+
+}
+
+.legend {
+    font-size: 30px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom: 40px;
+}
+
+/* .g_input input:focus {
+    border-bottom: 1px solid #f00;
+} */
+
+.invalid small{
+visibility: visible;
+color: rgb(204, 31, 31);
+}
+/* .invalid input{
+    border: 1px solid red;
+    border-radius: 3px;
+} */
+.vaild small{
+    visibility: hidden;
+ 
+}
+#sub {
+    height: 40px;
+    background-color: #f03539;
+    ;
+    border: none;
+    border: 1px solid #b81b1d;
+    border-radius: 20px;
+    font-size: 20px;
+    color:#000;
+    /* border-style: inset; */
+    padding:0 20px;
+    width: 102%;
+
+}
+
+#sub:focus {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+
+
+}
+.parag{
+    width: 80%;
+    
+    /* border: 1px solid #b81b1d; */
+
+}
+.parag p span{
+    font-weight: bold;
+}
+/* #sub:active {
+    background-color: black;
+} */
+
+#sub:hover {
+    cursor: pointer;
+    background-color: #000;
+    color:red;
+    /* font-weight: bold; */
+    /* color: white; */
+
+    box-shadow: 0px 2px 3px 0px rgb(170, 167, 167);
+
+}
+
+
+
+/* .global {
+    border: 1px solid blue;
+} */
+
+
+
+a:hover {
+    color: blue;
+}
+
+hr {
+    margin-bottom: 20px;
+    color:blue;
+    box-shadow: 2px 2px 6px 0 #aaa;
+}
+.footer_conainer{
+    background-color: #222;
+    height: 400px;
+    width: 100%;
+    color:white;
+    font-size: 20px;
+
+}
+footer{
+    padding-top: 200px;
+}
+
+/* body {
+    background-image: url(/Users/mohamedparker444gmail.com/Documents/jokerbf.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+
+} */
+@media(max-width:1007px){
+    .container{
+        width:900px;
+        height: 800px;
+    }
+    .container .img{
+        flex:0;
+    }
+    
+}
+@media(max-width:900px){
+    .container{
+        width:750px;
+        height: 780px;
+    }
+    .container .img{
+        flex:0;
+    }
+    
+}

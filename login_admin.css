@@ -1,0 +1,102 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    background-color: white;
+    
+ }
+ .logo img{
+    width:140px;
+    height: 120px;
+    display:block;
+   margin:27px auto;
+  
+    
+ }
+ 
+ form {
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height : 420px;
+    background: white;
+    border: 1px solid red;
+    border-radius:  15px;
+    box-sizing: border-box;
+    /* background: url(/resource/web.jpeg);
+    background-size: 30% 30%;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%; */
+    
+ }
+ 
+ h2 {
+ color:black;
+ text-align: center;
+ margin-top: 85px;
+ font-weight:bold;
+ }
+ 
+ input[type="text"],[type="password"] {
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid red;
+    background: none;
+    padding: 5px;
+    color: black;
+ }
+ input:focus{
+    border-bottom: 1px solid red;
+
+ }
+ input[type="text"]{
+    top: 140px;
+    left: 50px;
+ }
+ 
+ input[type="password"]{
+    top: 210px;
+    left: 50px;
+ }
+ 
+ ::placeholder{
+    color: black;
+ }
+ 
+ input[value="Login"]{
+    position:absolute;
+    top: 305px;
+    left: 110px;
+    width: 130px;
+    height: 35px;
+    background: red;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius:  15px;
+    font-size: 20px;
+ 
+ }
+ 
+ input[value="Login"]:hover{
+    background: black;
+    color:red;
+    cursor: pointer;
+ }
+ 
+ p{
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    color:black;
+    cursor: pointer;
+ }
+ p:hover{
+    color: red;
+ }
